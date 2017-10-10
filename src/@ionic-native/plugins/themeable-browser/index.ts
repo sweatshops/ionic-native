@@ -103,6 +103,12 @@ export class ThemeableBrowserObject {
   reload(): void { }
 
   /**
+   * Reloads the current page
+   */
+  @CordovaInstance({ sync: true })
+  share(): void { }
+
+  /**
    * Injects JavaScript code into the browser window.
    * @param script    Details of the script to run, specifying either a file or code key.
    * @returns {Promise<any>}
